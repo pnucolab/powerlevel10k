@@ -31,8 +31,6 @@ function _p9k_can_configure() {
       return 1
     fi
     if [[ ! -w $dir ]]; then
-      $0_error "cannot create $__p9k_cfg_path_u because ${dir//\%/%%} is readonly"
-      return 1
     fi
 
     [[ ! -e $__p9k_cfg_path || -f $__p9k_cfg_path || -h $__p9k_cfg_path ]] || {
