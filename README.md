@@ -1,6 +1,9 @@
 # Powerlevel10k
 
-1. Make sure you already installed oh-my-zsh: https://ohmyz.sh/
+1. Make sure you already installed oh-my-zsh (https://ohmyz.sh/)
+    ```zsh
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
 2. Make sure to remove the old powerlevel10k in your home directory.
     ```zsh
     rm -fr ~/.oh-my-zsh/custom/themes/powerlevel10k
