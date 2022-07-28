@@ -1,6 +1,6 @@
 # Powerlevel10k
 
-1. Make sure you already installed oh-my-zsh (https://ohmyz.sh/)
+1. Make sure you already installed oh-my-zsh (https://ohmyz.sh/). Otherwise, install it via:
     ```zsh
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
