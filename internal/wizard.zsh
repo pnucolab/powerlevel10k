@@ -1579,11 +1579,7 @@ function ask_zshrc_edit() {
   add_widget 0 print -P ""
   add_widget 1
   local modifiable=y
-  if [[ ! -w $__p9k_zd ]]; then
-    modifiable=
-    add_widget 0 flowing -c %3FWARNING:%f %2F${__p9k_zd_u//\\/\\\\}%f %3Fis readonly.%f
-    add_widget 0 print -P ""
-  elif [[ -e $__p9k_zshrc && ! -w $__p9k_zshrc ]]; then
+  if [[ -e $__p9k_zshrc && ! -w $__p9k_zshrc ]]; then
     local -a stat
     zstat -A stat +uid -- $__p9k_zshrc || quit -c
     if (( stat[1] == EUID )); then
